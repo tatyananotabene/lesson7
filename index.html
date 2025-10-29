@@ -6,11 +6,13 @@
     <title>Lesson 7</title>
 </head>
 <body>
-	<form enctype="multipart/form-data" action="upload.php" method="POST">
-		<input name="file_name" type="file">	
-		<br/>
-		<br/>
-		<input type="submit" value="Отправить файл">
-	</form>
+    <form enctype="multipart/form-data" action="upload.php" method="POST">
+        <label for="file_name">С каким именем сохранить файл на сервере:</label><br>
+        <input type="text" name="file_name" id="file_name"><br><br>
+        <label for="content">Выберите файл:</label><br>
+        <input type="file" name="content" id="content"><br><br>
+        
+        <input type="submit" value="Отправить файл">
+    </form>
 </body>
 </html>
